@@ -1,0 +1,111 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --font1: Arial, Helvetica, sans-serif;
+    --font2: 'Tangerine', cursive;
+    --font3: 'Roboto', sans-serif;
+    --font4: 'Bebas Neue', cursive;
+
+    --cor1: #2e0049;
+    --cor2: #420475;
+    --cor3: #97daf5;
+    --cor4: #858AE3;
+    --cor5: #613DC1;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+}
+
+body, html {
+    min-height: 100vh;
+    background-color: gray;
+    font-family: var(--font1);
+}
+
+header {
+    text-align: center;
+    color: var(--cor3);
+    background-image: linear-gradient(var(--cor1), var(--cor2));
+    height: 100vh;
+}
+
+header h1 {
+    padding-top: 40vh;
+    font-size: 10vh;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    text-shadow: 3px 3px 10px #2C0735;
+}
+
+header h2{
+    font-size: 2.5vh;
+    font-family: var(--font3);
+    color: #c1e4f1;
+}
+
+header img {
+    height: 6vh;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+main {
+    min-height: 100vh;
+    background-color: var(--cor5);
+    box-shadow: inset 1px 1px 8px 0px black;
+    text-align: left;
+}
+
+main h1 {
+    font-size: 10vh;
+    font-family: var(--font4);
+    font-weight: 700;
+    color: var(--cor3);
+    text-shadow: 2px 2px 5px #2C0735;
+    padding: 50px;
+}
+
+main p {
+    font-size: 3vh;
+    font-family: var(--font3);
+    color: #c1e4f1;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 10px;
+}
+
+main > picture#imagem {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+picture .img1 {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    main p {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 5px;
+    }
+
+    picture .img1 {
+        max-width: 35px;
+        max-height: 35px;
+        padding: 10px;
+    }
+}
